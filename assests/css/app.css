@@ -1,0 +1,32 @@
+
+.testimonial-slider {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+.testimonial-item {
+    text-align: center;
+    padding: 20px;
+}
+.testimonial-text {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.testimonial-user {
+    font-weight: bold;
+}
+.testimonial-place {
+    color: #6c757d;
+}
+.carousel-indicators {
+    bottom: -50px;
+}
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.carousel-indicators .active {
+    background-color: #007bff;
+}
