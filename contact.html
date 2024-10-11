@@ -7,13 +7,15 @@
     <title>Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
 <body>
-    <main class="bg-primary">
+    <header class="bg-primary">
         <nav class="navbar navbar-expand-lg bg-primary container" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">eBooks</a>
+                <a class="navbar-brand" href="index.html">eBooks</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -22,7 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="books/index.html">Books</a>
@@ -34,7 +36,7 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="d-flex navbar-nav ms-auto">
@@ -51,8 +53,95 @@
                 </div>
             </div>
         </nav>
-    </main>
-    <h1>Contact</h1>
+    </header>
+
+    <!-- Header Section -->
+<header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Contact Us</h1>
+      <p class="lead">We’d love to hear from you! Get in touch with us today.</p>
+    </div>
+  </header>
+  
+  <!-- Contact Form and Address Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-lg-6 mb-5">
+          <h2 class="mb-4">Send us a message</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+  
+        <!-- Contact Address -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">Our Contact Details</h2>
+          <p class="mb-4">Feel free to reach us at any of our offices or use the contact form to drop us a message!</p>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <h5>📍 Headquarters</h5>
+              <p class="mb-0">123 eBook St., Knowledge City, 56789</p>
+              <p>Email: contact@ebooksworld.com</p>
+            </li>
+            <li class="mb-3">
+              <h5>📞 Phone</h5>
+              <p class="mb-0">+1 (555) 123-4567</p>
+              <p>Mon - Fri, 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="mb-3">
+              <h5>💻 Social Media</h5>
+              <p>
+                <a href="#" class="text-decoration-none me-2">Twitter</a>
+                <a href="#" class="text-decoration-none me-2">Facebook</a>
+                <a href="#" class="text-decoration-none">LinkedIn</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <div class="bg-dark py-3">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-white">© 2024 Company, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    
 </body>
 
 </html>
