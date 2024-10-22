@@ -95,7 +95,7 @@ enquiryForm.addEventListener("submit", (event) => {
     }
 
     if(isValid) {
-        fetch("https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZjMDYzNzA0Mzc1MjZjNTUzMzUxMzYi_pc", {
+        fetch("https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZjMDYzNzA0M2Q1MjZlNTUzYzUxMzEi_pc", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
